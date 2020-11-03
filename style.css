@@ -1,0 +1,16 @@
+
+.box {
+    color: #2C3E50;
+    margin: 20px;
+    padding: 20px;
+    background:#f4f7f8;
+  }
+  
+  body {
+    background: white;
+  }
+  
+  .divborder {
+    border-style: outset;
+    border-width: medium;
+  }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude Attitude</title>
+  
+  <!-- Point HTML to the CSS file -->
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Add a Bootstrap component: Navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="index.html"><h3>Latitude</h3></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="comparison.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- Create overall Grid -->
+
+    <div class="container">
+      
+      <!-- Row 1 -->
+      <div class="row"> 
+
+        <!-- Column 1 -->
+         <div class="col-sm-12 col-lg-8">
+          <div class="box">
+            <h3><strong>Summary: X vs. Latitude</strong></h3>
+            <hr class="my-4">
+            <img src="Resources/images/LatitudeVsCloudiness.png" class="img-fluid">
+            <p>The purpose of this project was to assess how weather changes as it gets closer to the equator. Using the Google OpenMap API, we pulled a random selection of weather in over 500 cities on a specific day of the year. 
+              <br>
+              <br>We used MatPlotLib to graph the data and this site shows the overall result of those findings, the measurements of cloudiness, humidity, temperature, and wind speed in those cities. 
+            </p>
+         </div>   
+         </div>
+
+         <!--Column 2-->
+ <div class="col-sm-12 col-lg-4">
+  <div class="box">
+  <!-- Row 1 -->
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Visualizations</h4>
+        <hr>
+      </div>
+    </div>
+ 
+  <!-- Row / Column 2-->
+   <div class="row">
+
+      <div class="col-lg-6 col-sm-3">    
+         <a href="temperature.html"><img src="Resources/images/LatitudeVsTemp.png" class="img-fluid" alt="Temperature"></a>
+      </div>
+      <div class="col-lg-6 col-sm-3">  
+         <a href="humidity.html"><img src="Resources/images/LatitudeVsHumidity.png" class="img-fluid" alt="Humidity"></a>
+      </div>
+      <div class="col-lg-6 col-sm-3">  
+        <a href="cloudiness.html"><img src="Resources/images/LatitudeVsCloudiness.png" class="img-fluid"alt="Cloudiness"></a>
+      </div>
+      <div class="col-lg-6 col-sm-3">     
+        <a href="wind_speed.html"><img src="Resources/images/LatitudeVsWindSpeed.png" class="img-fluid"alt="Wind Speed"></a>
+      </div>
+    </div>             
+</div>
+</div>      
+</div>	 	
+
+<!--These are <script>s from Bootstrap website. Many BS components require the use of JavaScript to function -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
