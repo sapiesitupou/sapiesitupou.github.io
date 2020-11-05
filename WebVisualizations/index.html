@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Latitude Attitude</title>
+  <title>Latitude Analysis</title>
   
   <!-- Point HTML to the CSS file -->
   <link rel="stylesheet" href="bootstrap.css">
@@ -26,10 +26,10 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="temperature.html">Max Temperature</a>
-            <a class="dropdown-item" href="humidity.html">Humidity</a>
-            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+            <a class="dropdown-item" href="w_temperature.html">vs. Max Temperature</a>
+            <a class="dropdown-item" href="w_humidity.html">vs. Humidity</a>
+            <a class="dropdown-item" href="w_cloudiness.html">vs.Cloudiness</a>
+            <a class="dropdown-item" href="w_wind-speed.html">vs. Wind Speed</a>
           </div>
         </li>
 
@@ -55,12 +55,12 @@
         <!-- Column 1 -->
          <div class="col-sm-12 col-lg-8">
           <div class="box">
-            <h3><strong>Summary: X vs. Latitude</strong></h3>
+            <h3><strong>Summary: Latitude vs. X</strong></h3>
             <hr class="my-4">
-            <img src="Resources/images/LatitudeVsCloudiness.png" class="img-fluid">
-            <p>The purpose of this project was to assess how weather changes as it gets closer to the equator. Using the Google OpenMap API, we pulled a random selection of weather in over 500 cities on a specific day of the year. 
+            <img src="Resources/assets/images/Fig3.png" class="img-fluid">
+            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. 
               <br>
-              <br>We used MatPlotLib to graph the data and this site shows the overall result of those findings, the measurements of cloudiness, humidity, temperature, and wind speed in those cities. 
+              <br>After assembling the dataset, we used Matplotlib to plot the data various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed. 
             </p>
          </div>   
          </div>
@@ -80,16 +80,16 @@
    <div class="row">
 
       <div class="col-lg-6 col-sm-3">    
-         <a href="temperature.html"><img src="Resources/images/LatitudeVsTemp.png" class="img-fluid" alt="Temperature"></a>
+         <a href="w_temperature.html"><img src="Resources/assets/images/Fig1.png" class="img-fluid" alt="Temperature"></a>
       </div>
       <div class="col-lg-6 col-sm-3">  
-         <a href="humidity.html"><img src="Resources/images/LatitudeVsHumidity.png" class="img-fluid" alt="Humidity"></a>
+         <a href="w_humidity.html"><img src="Resources/assets/images/Fig2.png" class="img-fluid" alt="Humidity"></a>
       </div>
       <div class="col-lg-6 col-sm-3">  
-        <a href="cloudiness.html"><img src="Resources/images/LatitudeVsCloudiness.png" class="img-fluid"alt="Cloudiness"></a>
+        <a href="w_cloudiness.html"><img src="Resources/assets/images/Fig3.png" class="img-fluid"alt="Cloudiness"></a>
       </div>
       <div class="col-lg-6 col-sm-3">     
-        <a href="wind_speed.html"><img src="Resources/images/LatitudeVsWindSpeed.png" class="img-fluid"alt="Wind Speed"></a>
+        <a href="w_wind-speed.html"><img src="Resources/assets/images/Fig4.png" class="img-fluid"alt="Wind Speed"></a>
       </div>
     </div>             
 </div>
